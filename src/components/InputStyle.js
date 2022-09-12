@@ -6,21 +6,23 @@ export const CssTextField = withStyles({
         color: 'black',
         '& label.Mui-focused': {
             color: 'blue',
-            background: 'white',
+            width: '60px',
+            background:'white'
         },
         '& label': {
-            background: 'white',
+            width:'60px',
+            backgroundColor:'white'
         },
         '& .MuiOutlinedInput-root': {
             '& input': {
-                borderRadius: '12px',
+                borderRadius: '6px',
                 zIndex: '0',
-                width: '100%'
+                width: '300px',
             },
             '&.Mui-focused input': {
                 color: 'black',
                 borderColor: 'blue',
-                borderRadius: '12px',
+                borderRadius: '6px',
             },
             '& fieldset': {
                 border: 'none',
@@ -41,14 +43,13 @@ export const NameTextField = withStyles({
         '& .MuiOutlinedInput-root': {
             '& input': {
                 border: '1px solid lightgrey',
-                borderRadius: '12px',
+                borderRadius: '6px',
                 width: '100%',
                 zIndex: '0',
             },
             '&.Mui-focused input': {
                 color: 'black',
-                borderColor: 'blue',
-                borderRadius: '12px',
+                borderRadius: '6px',
             },
             '& fieldset': {
                 border: 'none',

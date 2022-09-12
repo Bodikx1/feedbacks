@@ -49,28 +49,28 @@ export default function AdminRegister() {
         setEmptyPass('')
         setEmptyConfirmPass('')
     }
+    const style = {width: '350px', border: '1px solid lightgrey', borderRadius: '6px', margin:'0px' , marginBottom:'15px'}
     return (
-        <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={admin.body}>
                 <Logo/>
                 <h2 className={admin.title}>Регистрация:</h2>
                 <div className={admin.name}>
                     <NameTextField
                         onChange={e => setName(e.target.value)}
-                        style={{marginTop: '10px', marginBottom: '10px', marginRight: '3px'}}
+                        style={{marginTop: '10px', marginRight: '3px' ,width:'172px'}}
                         id="demo-helper-text-misaligned-no-helper"
-                        label="Имя"
                         helperText={emptyName}
+                        placeholder='Имя'
                         inputProps={{
                             maxLength: '30',
                         }}
                     />
                     <NameTextField
                         onChange={e => setSurname(e.target.value)}
-                        style={{marginTop: '10px', marginBottom: '10px', marginLeft: '3px'}}
+                        style={{marginTop: '10px', marginLeft: '3px',width:'172px'}}
                         id="demo-helper-text-misaligned-no-helper"
-                        label="Фамилия"
                         helperText={emptySurname}
+                        placeholder='Фамилия'
                         inputProps={{
                             maxLength: '30',
                         }}
@@ -78,29 +78,26 @@ export default function AdminRegister() {
                 </div>
                 <CssTextField
                     onChange={e => setEmail(e.target.value)}
-                    style={{width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}}
+                    style={style}
                     name="email"
                     type="email"
-                    placeholder="someemail@email.com"
-                    label="Email Address"
+                    placeholder="Почта"
                     inputProps={{
                         maxLength: '30',
                     }}
                 />
-                <h5 style={{width: '100%', color: "red"}}>{emptyInput}</h5>
+                <h5 style={{width: '350px', color: "red"}}>{emptyInput}</h5>
                 <CssTextField
                     onChange={(e)=>PasswordChange(e)}
-                    style={{width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}}
+                    style={style}
                     name="password"
                     type={passwordVis}
                     placeholder="Пароль"
-                    label="Пароль"
                     margin='normal'
                     inputProps={{
                         maxLength: '30',
                     }}
                     InputProps={{
-
                         endAdornment:
                             passwordVis === 'password'
                                 ?
@@ -109,14 +106,13 @@ export default function AdminRegister() {
                                 <VisibilityOffIcon style={{cursor: 'pointer'}} onClick={() => setPassVis('password')}/>
                     }}
                 />
-                <h5 style={{width: '100%', color: "red"}}>{emptyPass}</h5>
+                <h5 style={{width: '350px', color: "red"}}>{emptyPass}</h5>
                 <CssTextField
                     onChange={e => PasswordConfirmChange(e)}
-                    style={{width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}}
+                    style={style}
                     name="Confirm password"
                     type={confirmPassVis}
                     placeholder="Повторить пароль"
-                    label="Повторить пароль"
                     margin='normal'
                     inputProps={{
                         maxLength: '30',
@@ -132,31 +128,38 @@ export default function AdminRegister() {
                                                    onClick={() => setConfirmPassVis('password')}/>
                     }}
                 />
-                <h5 style={{width: '100%', color: "red"}}>{emptyConfirmPass}</h5>
+                <h5 style={{width: '350px', color: "red"}}>{emptyConfirmPass}</h5>
                 <PasswordStrength password={password}/>
 
                 {email === '' || password === '' || confirmPass !== password || name === '' || surname === '' ?
-                    <Link to='#'>
-                        <Button
+
+                        <button
                             onClick={Check}
-                            variant="outlined"
                             style={{
-                                margin: '10px',
+                                color:'black',
+                                width:'200px',
+                                height :'40px',
+                                margin: '30px 10px 10px 10px',
+                                fontSize:'15px',
                                 borderRadius: '4px',
-                                borderColor: 'rgb(103, 58, 183)',
-                                color: 'rgb(103, 58, 183)'
-                            }}>Следующий шаг</Button>
-                    </Link>
+                                border:'1px solid lightgrey',
+                                backgroundColor: 'rgb(255,255,255)',
+                            }}><Link to='#' style={{textDecoration:'none' , color:"black"}}>Следующий шаг</Link></button>
+
                     :
-                    <Link to='/RestaurantRegister'>
-                        <Button variant="contained" style={{
-                            margin: '10px',
+
+                        <button style={{
+                            color:'white',
+                            width:'200px',
+                            height :'40px',
+                            margin: '30px 10px 10px 10px',
+                            fontSize:'15px',
                             borderRadius: '4px',
-                            backgroundColor: 'rgb(103, 58, 183)'
-                        }}>Следующий шаг</Button>
-                    </Link>
+                            border:'none',
+                            backgroundColor: 'rgb(0,0,0)',
+                        }}><Link to='/RestaurantRegister' style={{textDecoration:'none' , color:"white"}}>Следующий шаг</Link></button>
+
                 }
             </div>
-        </div>
     )
 }

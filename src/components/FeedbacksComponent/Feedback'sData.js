@@ -4,101 +4,18 @@ export const feedbacks = [{
     id: Math.random(1000),
     rate: 3,
     UserName: 'John',
-    text: 'DeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdasadsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdaDeliciousasdadAda' +
-        'd' +
-        'adsdasdsdadadasdwaesdawdwadsdas',
+    text: 'AMAZING! Truly amazing experience all around the bar especially Gabe and chino! They really know how to make you feel special and at home! They make the best drinks, just tell them what you are looking for and they will deliver the drink. ' +
+        'Present and quality of drink are all there with both of these gentlemen! ' +
+        'If you plan on coming to Joia make sure you ask for either gentlemen, will not disappoint.',
     status: 'Активный',
     date: now
 
 }, {
     id: Math.random(1000),
     rate: 2,
-    UserName: 'James',
-    text: 'Thanks',
+    UserName: 'James Sombrano',
+    text: 'The guy at the door is disgusting, refused to let my friends in even though i has a reservation and used curse language and called me a bitch! ' +
+        'When i spoke to the manager he said “ i apologize for the inconvenience but if he doesn’t want to let the rest of your party in I can’t force him”',
     status: 'В обработке',
     date: now
 
@@ -106,7 +23,9 @@ export const feedbacks = [{
     id: Math.random(1000),
     rate: 4,
     UserName: 'Alex',
-    text: 'very beautiful place',
+    text: 'The guy at the door is disgusting, refused to let my friends in even though i has a reservation and used curse language and called me a bitch! When i spoke to the manager he said “ i apologize for the inconvenience but if he doesn’t want to let the rest of your party in I can’t force him”\n' +
+        '\n' +
+        'I’m shocked by how a beautiful place like this will be operated in that manner, its not my first time here but def my last.',
     status: 'Активный',
     date: now
 

@@ -23,6 +23,7 @@
     padding: 5px ;
     width: 180px;
     height: 43px;
+    margin: 0 auto;
     margin-bottom:5px;
     color : white;
     display: flex;
@@ -44,17 +45,20 @@
     align-items: center;
     flex-direction: row;
 }
-a{
+.RatingAutho a{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .fbIcon{
     font-size: 13px;
-    color: white;
+    color: #ffffff;
     height: 100%;
     border-radius: 7px;
-    background-color: blue;
+    background-color: #000000;
     margin: 15px;
     padding: 10px;
+}
+.RatingAutho a:hover{
+    text-decoration: none;
 }

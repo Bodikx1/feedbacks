@@ -50,14 +50,14 @@ export default function PasswordStrength({password}) {
         <>
             <div className='progress' style={{
                 marginTop: '5px',
-                width: '100%',
+                width: '350px',
                 height: '7px',
                 backgroundColor: 'lightgrey',
                 borderRadius: '4px'
             }}>
                 <div className='progress-bar' style={ChangePasswordColor()}></div>
             </div>
-            <p style={{color: ProgressColor()}}>{StrengthPassLable()}</p>
+            <p style={{color: ProgressColor() , width:'350px'}}>{StrengthPassLable()}</p>
         </>
     )
 }

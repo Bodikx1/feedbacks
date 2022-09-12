@@ -10,12 +10,8 @@ export default function FeedbacksPageHeader({filterChange, sortChange, setSearch
             <TextField
                 sx={() => ({
                     margin: '15px',
-                    borderRadius: '8px',
-                    color: 'rgb(3, 114, 183)',
+                    borderRadius: '4px',
                     fontWeight: 'bold',
-                    '&:hover': {
-                        background: `rgb(189, 207, 253)`,
-                    },
                 })}
                 startDecorator={<SearchIcon/>}
                 id="outlined-size-small"

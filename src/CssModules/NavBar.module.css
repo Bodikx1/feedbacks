@@ -1,24 +1,224 @@
 .NavBar{
-    height: 100%;
-    padding: 20px;
-    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    align-items: center;
     background-color: white;
-    border-radius: 12px;
-    margin-right: 50px;
+    border-bottom: 1px solid lightgray;
+    z-index: 2;
 }
-.Logo{
-    width: 100%;
+.Lang{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px;
+    width: 70px;
+    height: 40px;
+}
+.Subscription h5{
+    width: 90px;
+}
+.Subscription {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 25px;
+    z-index: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    float: right;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.SubscriptionFullInfo {
+    color: #000000;
+}
+
+.SubscriptionFullInfoBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SubscriptionFullInfoBody h3 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.SubscriptionFullInfoBody span {
+    color: gray;
+}
+.SubscriptionContent {
+    width: 300px;
+    height: 100px;
+}
+.triangle{
+    margin-left: 309px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+}
+.dropdown {
+    width: 250px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    right: 100px;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+.Logo{
+    width: 194px;
+    padding-left: 30px;
+}
+.Buttons{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 30px;
+}
+.SubscriptionHeader {
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 400px;
+    box-shadow: 3px 4px 5px -4px rgba(0,0,0,0.75);
+    background-color: #FFFFFF;
+}
+.SubscriptionHeader h4{
+    text-align: left;
+}
+.SubscriptionHeader h5{
+    text-decoration: underline;
+}
+.SubscriptionHeader a{
+    margin: 0;
+}
+a:hover{
+    text-decoration: underline;
 }
 .NavBar button{
-    margin: 10px;
+    display: block;
+    font-weight: normal;
+    width: 110px;
+    font-size: 16px;
+    border: none;
+    background-color: #FFFFFF;
+}
+hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.MenuButton{
+    display: none;
+}
+.messageWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.MessageButton{
+    width: 100px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+    color: black;
+}
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal a{
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    font-weight: normal;
+}
+
+.modal h3 {
+    font-size: 20px;
+    margin: 30px;
+    color: black;
 }
 @media screen and (max-width: 500px){
     .NavBar{
         margin: 0;
+
+    }
+    .Buttons {
+        display: none;
+    }
+    .MenuButton{
+        padding-right: 30px;
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+    .messageWrapper a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:15px
+    }
+    .SubscriptionHeader{
+        width: 300px;
+        border : none;
+    }
+    .SubscriptionHeader button{
+        background-color: white;
+        color: black;
+        padding: 5px;
+        border: 1px solid lightgray;
+        width: 100px;
+        height: 30px;
+    }
+    .SubscriptionHeader a{
+        margin: 0;
+        justify-content: right;
+    }
+    .dropdownContent{
+        width: 300px ;
+        margin-top: 22px;
+        right: 0px;
+    }
+    .triangle{
+        margin-left: 208px;
     }
 }

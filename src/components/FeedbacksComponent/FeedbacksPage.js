@@ -4,6 +4,8 @@ import React, {useState} from "react";
 import FeedbacksPageHeader from "./FeedbacksPageHeader";
 import {feedbacks} from "./Feedback'sData.js"
 import FeedbacksList from "./FeedbacksList";
+import admin from "../AdminComponents/AdminPanel.module.css";
+import Footer from "../Footer";
 
 export default function FeedbacksPage() {
     const [filter, setFilter] = React.useState('status');
@@ -33,8 +35,11 @@ export default function FeedbacksPage() {
                     filterChange={filterChange}
                     filter={filter}
                 />
-                <FeedbacksList comment={true} feedbacks={SearchFeedback}/>
+                <div className={admin.feedbacksListContent}>
+                    <FeedbacksList comment={true} feedbacks={SearchFeedback}/>
+                </div>
             </div>
+            <Footer/>
         </div>
     )
 }

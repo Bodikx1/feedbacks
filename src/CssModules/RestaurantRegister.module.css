@@ -3,25 +3,89 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    color: rgb(97, 97, 97);
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.334em;
     font-family: Roboto, sans-serif;
-    background-color: rgb(255, 255, 255);
-    border-radius: 12px;
-    border: 1px solid rgba(144, 202, 249, 0.46);
+    border-radius: 6px;
     min-height: 700px;
     padding: 20px 50px;
     min-width: 300px;
+    max-width: 700px;
+}
+.SelectCountry{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px ;
+    width:100px;
+    height:57px ;
+    padding:0
+}
+select:focus{
+    color:black
+}
+.RestaurantSelect{
+    width:302px ;
+    border:1px solid lightgray ;
+    color: #000000;
+    font-weight: 100;
+    font-size: 16px;
+    border-radius:6px ;
+    height:56px;
+    padding:10px ;
+    margin-top: 10px;
+
+}
+
+.SelectCountry img{
+    width: 23px;
+    height: 13px;
 }
 .title{
-    color: rgb(103, 58, 183) ;
+    text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
 }
+.CountryTypeMenu{
+    flex-direction: column;
+    position:absolute ;
+    margin-top:255px;
+    margin-left: 110px;
+    width: 180px;
+    z-index:2 ;
+    background-color: white;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.checkTerms{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    margin: 10px 0 10px 10px;
+}
+.checkTerms h5{
+    width: 240px;
+}
+.CountryTypeMenuItem{
+    padding: 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.CountryTypeMenuItem span{
+    margin: 8px;
+}
+.CountryTypeMenuItem:hover{
+    background-color: lightgray;
+}
 .hr{
-    width: 100%;
+    width: 300px;
     color: lightgray;
     border: none;
     border-bottom: 1px solid lightgray;

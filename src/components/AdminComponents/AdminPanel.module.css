@@ -1,9 +1,15 @@
-.Page {
+.Page{
     display: flex;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
-
+.Page a{
+    color:black;
+}
 .body {
+    margin-top: 70px;
     padding-top: 20px;
     display: block;
     color: black;
@@ -11,20 +17,17 @@
     font-weight: 400;
     line-height: 1.334em;
     font-family: Roboto, sans-serif;
-    background-color: rgb(255, 255, 255);
     border-radius: 12px;
-    border: 1px solid rgba(144, 202, 249, 0.46);
     min-height: 100%;
     min-width: 700px;
-    width: 100%;
+   max-width: 80rem;
 }
 
 .title {
     width: 80%;
-    float: left;
-    color: rgb(103, 58, 183);
-    margin: 10px;
-
+    color: rgb(0, 0, 0);
+    margin: 30px;
+    text-align: center;
 }
 
 .Video {
@@ -35,46 +38,6 @@
     align-items: center;
 }
 
-.Subscription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 180px;
-    min-width: 130px;
-    height: 25px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    color: white;
-    float: right;
-    background-color: rgb(103, 58, 183);
-}
-
-.SubscriptionInfo {
-    margin-left: 8px;
-    margin-top: 3px;
-    height: 18px;
-    width: 18px;
-}
-
-.SubscriptionFullInfo {
-    color: black;
-}
-
-.SubscriptionContent {
-    position: absolute;
-    top: 10%;
-    right: 11.6%;
-    min-width: 240px;
-    height: 100px;
-}
-.triangle{
-    margin: 0 auto;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #ffffff;
-}
 .content {
     width: 100%;
     display: flex;
@@ -90,65 +53,13 @@
     border-radius: 4px;
 }
 
-
-.SubscriptionHeader {
-    gap: 15px;
-    padding: 15px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    height: 50px;
-    width: 100%;
-    box-shadow: 3px 4px 5px -4px rgba(0,0,0,0.75);
-    background-color: #FFFFFF;
-}
-.SubscriptionHeader h5{
-    text-decoration: underline;
-}
-
-.SubscriptionFullInfoBody {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.SubscriptionFullInfoBody h3 {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.SubscriptionFullInfoBody a button {
-    height: 30px;
-    font-size: 10px;
-    margin: 10px;
-    border-radius: 6px;
-    background-color: rgb(103, 58, 183);
-}
-.SubscriptionFullInfoBody span {
-    color: gray;
-}
-.triangel {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #ffffff;
-}
 .feedbacksList {
-    color: rgb(122, 12, 46);
+    min-width: 90%;
     margin-top: 15px;
     margin-bottom: 30px;
-    border-radius: 12px;
-    width: 80%;
+    border : 1px solid lightgrey;
+    border-radius: 4px;
     min-height: 200px;
-    background-color: rgb(255, 231, 217)
-}
-
-.feedbacksList {
-    box-shadow: 0px 2px 3px 0.3px rgba(0, 0, 0, 0.33);
 }
 
 .feedbacksListFooter {
@@ -156,21 +67,10 @@
     justify-content: right;
     height: 50px;
     width: 100%;
-    background-color: white;
-    border-top: 1px solid lightgray;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
 }
 
-.feedbacksListFooter a {
-    color: rgb(122, 12, 46);
-    margin-right: 10px;
-}
 
 .feedbacksListContent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: white;
     min-height: 200px;
 }
@@ -186,7 +86,6 @@
     }
 
     .body h2 {
-        color: rgb(122, 12, 46);
         font-size: 18px;
     }
 
@@ -194,12 +93,6 @@
         font-size: 15px;
     }
 
-    .Page {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
 
     .SubscriptionContent {
         width: 150px;

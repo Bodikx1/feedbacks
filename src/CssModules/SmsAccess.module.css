@@ -7,16 +7,9 @@
     font-weight: 400;
     line-height: 1.334em;
     font-family: Roboto, sans-serif;
-    background-color: rgb(255, 255, 255);
-    border-radius: 12px;
-    border: 1px solid rgba(144, 202, 249, 0.46);
     min-height: 200px;
     padding: 50px;
     min-width: 300px;
-}
-.body h2{
-    color: rgb(3, 114, 183);
-    margin-bottom: 30px;
 }
 .body input {
     text-align: center;

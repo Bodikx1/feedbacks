@@ -9,6 +9,7 @@ import SubscriptionMessage from "./MessageComponent/SubscriptionMessage";
 import {AspectRatio} from "@mui/joy";
 import {Link} from "react-router-dom";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 export default function QrCodePage({text}) {
     const [src, SetSrc] = useState('');
@@ -35,34 +36,47 @@ export default function QrCodePage({text}) {
                 </div>
 
                 <div>
+
                     <Button
                         variant="contained"
                         style={{
                             margin: '10px',
-                            borderRadius: '8px',
-                            backgroundColor: 'rgb(103, 58, 183)'
+                            borderRadius: '4px',
+                            color: 'rgb(0,0,0)',
+                            backgroundColor:'white',
+                            boxShadow:'none',
+                            border:'1px solid grey',
                         }}
                         onClick={() => handleOpen()}
                     ><PrintIcon/>
                     </Button>
+
                     <Button variant="contained" style={{
                         margin: '10px',
-                        borderRadius: '8px',
-                        backgroundColor: 'rgb(103, 58, 183)'
+                        borderRadius: '4px',
+                        color: 'rgb(0,0,0)',
+                        backgroundColor:'white',
+                        boxShadow:'none',
+                        border:'1px solid grey',
                     }}><ReplyIcon/>
                     </Button>
+
                     <Button variant="contained" style={{
                         margin: '10px',
-                        borderRadius: '8px',
-                        backgroundColor: 'rgb(103, 58, 183)'
+                        borderRadius: '4px',
+                        color: 'rgb(0,0,0)',
+                        backgroundColor:'white',
+                        border:'1px solid grey',
+                        boxShadow:'none',
                     }}><SaveAltIcon/>
                     </Button>
+
                 </div>
                 <h2>Как пользоваться:</h2>
                 <div className={qr.Video} style={{width: '100%'}}>
                     <iframe
                         style={{borderRadius: '12px'}}
-                        width="90%" height="310px" src="https://www.youtube.com/embed/D7SlK16o82o"
+                        width="90%" height="400px" src="https://www.youtube.com/embed/D7SlK16o82o"
                         title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen>
@@ -71,13 +85,13 @@ export default function QrCodePage({text}) {
                 <Link to='/OrderStyleQr'>
                     <Button
                         sx={() => ({
-                            margin: '10px',
-                            borderRadius: '8px',
-                            background: `rgb(255, 231, 217)`,
-                            color: 'rgb(122, 12, 46)',
+                            margin: '20px 0px 10px 0px',
+                            borderRadius: '4px',
+                            background: `rgb(0,0,0)`,
+                            color: 'rgb(255,255,255)',
                             fontWeight: 'bold',
                             '&:hover': {
-                                background: `rgb(204, 160, 132)`,
+                                background: `rgb(0,0,0)`,
                             },
                         })}
                         variant="contained"
@@ -87,13 +101,14 @@ export default function QrCodePage({text}) {
                 <Button
                     onClick={handleOpen}
                     sx={() => ({
-                        margin: '10px',
-                        borderRadius: '8px',
-                        backgroundColor: 'rgb(209, 233, 252)',
-                        color: 'rgb(17,46,147)',
+                        margin: '10px 0px 30px 0px',
+                        borderRadius: '4px',
+                        backgroundColor: 'rgb(255,255,255)',
+                        border:'1px solid grey',
+                        color: 'rgb(0,0,0)',
                         fontWeight: 'bold',
                         '&:hover': {
-                            background: `rgb(124, 173, 213)`,
+                            background: `rgb(255,255,255)`,
                         },
                     })}
                     variant="contained"
@@ -106,6 +121,7 @@ export default function QrCodePage({text}) {
                     )
                 }
             </div>
+            <Footer/>
         </div>
 
     )

@@ -20,10 +20,10 @@ export default function RatingSmsAccess() {
                 <Link to='/Gratitude'>
                     <Button
                         sx={{
-                            color: 'rgb(3, 114, 183)',
-                            backgroundColor: 'rgb(189, 207, 253)',
+                            color: 'rgb(255,255,255)',
+                            backgroundColor: 'rgb(0,0,0)',
                             '&:hover': {
-                                backgroundColor: 'rgb(123,148,211)'
+                                backgroundColor: 'rgb(0,0,0)'
                             }
                         }} variant="contained">Отправить</Button>
                 </Link>

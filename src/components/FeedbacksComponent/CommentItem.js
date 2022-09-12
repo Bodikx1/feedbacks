@@ -6,8 +6,8 @@ export default function CommentItem({comments, index, addComment, feedback}) {
     const [adminComment, setAdminComment] = useState('')
     return (
         <div className={css.comment} style={comments[comments.length - 1] === comments[index] ? {
-            borderBottomLeftRadius: '12px',
-            borderBottomRightRadius: '12px'
+            borderBottomLeftRadius: '6px',
+            borderBottomRightRadius: '6px'
         } : {borderRadius: '0px'}}>
             <div style={{width: '100%'}}>
                 <h3 className={css.CommentText}>
@@ -21,23 +21,25 @@ export default function CommentItem({comments, index, addComment, feedback}) {
             </div>
             <div style={{width: '100%', display: 'flex', justifyContent: 'space-between'}}>
 
-                <div style={{width: '100%', marginRight: '20px'}}>
+                <div style={{width: '100%'}}>
                     <div>
                         {
                             comments[comments.length - 1] === comments[index] ? (<Button
                                 sx={() => ({
                                     float:'right',
                                     margin: '15px 0 15px 15px',
-                                    borderRadius: '8px',
-                                    color: 'rgb(183, 129, 3)',
+                                    background: 'none',
+                                    color: 'rgb(0,0,0)',
                                     height: '20px',
-                                    width: "200px",
-                                    backgroundColor: 'rgb(255,239,185)',
+                                    width: "165px",
                                     fontWeight: 'bold',
                                     fontSize: '12px',
                                     textTransform: 'none',
+                                    boxShadow:'none',
                                     '&:hover': {
-                                        background: `rgb(206, 190, 107)`,
+                                        background: 'none',
+                                        boxShadow:'none',
+
                                     },
                                 })}
                                 variant="contained"

@@ -23,7 +23,7 @@ function RatingPage() {
         }
     }
     return (
-        <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <div>
             <div className={rate.body}>
                 <Logo/>
                 <h2>Оставьте Ваш отзыв:</h2>
@@ -38,11 +38,11 @@ function RatingPage() {
                     sx={() => ({
                         margin: '15px 15px 0 15px',
                         borderRadius: '8px',
-                        color: 'rgb(3, 114, 183)',
+                        color: 'rgb(0,0,0)',
                         fontWeight: 'bold',
-                        borderColor: `rgb(3, 114, 183)`,
+                        border:'1px solid black',
                         '&:hover': {
-                            background: `rgb(189, 207, 253)`,
+                            background: `rgb(255,255,255)`,
                         },
                     })}
                     minRows={3}
@@ -55,10 +55,10 @@ function RatingPage() {
                 />
                 {emptyFeedBack}
                 {feedback === '' || feedback.length > 1000 ?
-                        <Button variant="outlined" onClick={Check} style={{ borderRadius: '12px'}}>Отправить</Button>
+                        <Button variant="outlined" onClick={Check} style={{ borderRadius: '6px', color:'black' , border:'1px solid black'}}>Отправить</Button>
                     :
                     <Link to='/RatingAutho'>
-                        <Button variant="contained" style={{ borderRadius: '12px'}}>Отправить</Button>
+                        <Button variant="contained" style={{ borderRadius: '6px' , color:'white' , backgroundColor:'black'}}>Отправить</Button>
                     </Link>
                 }
             </div>

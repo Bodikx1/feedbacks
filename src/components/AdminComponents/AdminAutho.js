@@ -28,14 +28,13 @@ export default function AdminAutho() {
         }
 
     }
-    const style = {width: '100%', border: '1px solid lightgrey', borderRadius: '12px'}
+    const style = {width: '300px', border: '1px solid lightgrey', borderRadius: '6px'}
     return (
-        <div style={{width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div className={admin.body}>
                 <Logo/>
                 <h2 className={admin.title}>Здравствуйте,</h2>
                 <h2 className={admin.title}>войти с помощью:</h2>
-                <div>
+                <div className={admin.social}>
                     <FaceBook/>
                     <Google/>
                 </div>
@@ -50,22 +49,25 @@ export default function AdminAutho() {
                     name="email"
                     type="email"
                     placeholder="someemail@email.com"
-                    label="Email Address"
+                    label="Email"
                     defaultValue="someemail@email.com"
                     inputProps={{
                         maxLength: '30',
                     }}
+                    InputProps={{
+                        width:'300px'
+                    }}
 
                 />
-                <h5 style={{width: '100%', color: "red"}}>{emptyInput}</h5>
+                <h5 style={{width: '300px', color: "red"}}>{emptyInput}</h5>
                 <CssTextField
                     onChange={e => setPassword(e.target.value)}
                     style={style}
                     name="password"
                     type={passwordVis}
-                    placeholder="password"
+                    placeholder="Пароль"
                     defaultValue='123456'
-                    label="Password"
+                    label="Пароль"
                     margin='normal'
                     inputProps={{
                         maxLength: '30',
@@ -79,30 +81,38 @@ export default function AdminAutho() {
                                 <VisibilityOffIcon style={{cursor: 'pointer'}} onClick={() => setPassVis('password')}/>
                     }}
                 />
-                <h5 style={{margin: '0', width: '100%', color: "red"}}>{emptyPass}</h5>
+                <h5 style={{margin: '0', width: '300px', color: "red"}}>{emptyPass}</h5>
                 <Link to='/ForgotPassword'>
                     Забыли пароль?
                 </Link>
                 {email === '' || password === '' ?
-                    <Link to='#'>
-                        <Button
+
+                        <button
                             onClick={Check}
-                            variant="outlined"
                             style={{
+                                width:'100px',
+                                height :'40px',
                                 margin: '10px',
+                                fontSize:'15px',
                                 borderRadius: '4px',
-                                borderColor: 'rgb(103, 58, 183)',
-                                color: 'rgb(103, 58, 183)'
-                            }}>Войти</Button>
-                    </Link>
+                                border:'1px solid lightgrey',
+                                backgroundColor:'white',
+                                color: 'rgb(0,0,0)'
+                            }}><Link to='#' style={{textDecoration:'none' , color:'black'}}>Войти</Link></button>
+
                     :
-                    <Link to='/AdminPanel'>
-                        <Button variant="contained" style={{
+
+                        <button style={{
+                            width:'100px',
+                            height :'40px',
                             margin: '10px',
+                            fontSize:'15px',
                             borderRadius: '4px',
-                            backgroundColor: 'rgb(103, 58, 183)'
-                        }}>Войти</Button>
-                    </Link>
+                            border:'none',
+                            backgroundColor: 'rgb(0,0,0)',
+
+                        }}><Link to='/AdminPanel'style={{textDecoration:'none', color:'white',}}>Войти</Link></button>
+
                 }
                 <Link to='/AdminRegister'>
                     Зарегистрироваться?
@@ -116,6 +126,5 @@ export default function AdminAutho() {
                     )
                 }
             </div>
-        </div>
     )
 }
