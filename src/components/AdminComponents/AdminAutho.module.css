@@ -13,15 +13,11 @@
     padding: 20px 50px;
     max-width: 400px;
 }
-.body span , h4 , a{
+.body span{
     text-align: center;
 }
 .hr span {
     width: 20%;
-}
-.social{
-    text-align: center;
-    width: 100%;
 }
 .title {
     color: rgb(0, 0, 0);

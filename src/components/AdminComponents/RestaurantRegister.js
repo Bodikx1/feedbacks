@@ -12,6 +12,7 @@ import ger from '../../img/germany.jpg'
 import bel from '../../img/belarus.png'
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import PhoneNumber from "../PhoneNumber";
 
 
 export default function RestaurantRegister() {
@@ -105,26 +106,7 @@ export default function RestaurantRegister() {
                                                                              onClick={() => setCountryTypeOn(!countryTypeOn)}/>
                         {
                             countryTypeOn && (
-                                <div className={restaurant.CountryTypeMenu}>
-                                    <div className={restaurant.CountryTypeMenuItem}
-                                         onClick={() => CountryChange('Ukraine')}>
-                                        <img src={ukr} alt="Ukraine"/>
-                                        <span>Ukraine</span>
-                                        <span>(+380)</span>
-                                    </div>
-                                    <div className={restaurant.CountryTypeMenuItem}
-                                         onClick={() => CountryChange('Germany')}>
-                                        <img src={ger} alt="Germany"/>
-                                        <span>Germany</span>
-                                        <span>(+49)</span>
-                                    </div>
-                                    <div className={restaurant.CountryTypeMenuItem}
-                                         onClick={() => CountryChange('Belarus')}>
-                                        <img src={bel} alt="Belarus"/>
-                                        <span>Belarus</span>
-                                        <span>(+375)</span>
-                                    </div>
-                                </div>
+                                <PhoneNumber CountryChange={CountryChange}/>
                             )
                         }
                     </div>

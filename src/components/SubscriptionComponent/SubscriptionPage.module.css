@@ -1,9 +1,14 @@
-.Page {
+.Page{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .body {
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,11 +19,11 @@
     font-family: Roboto, sans-serif;
     min-height: 400px;
     min-width: 700px;
-    width: 100%;
+    width: 85%;
 }
 .subsPlanItem{
     width: 420px;
-    height: 485px;
+    height: 550px;
     border:1px solid lightgray;
     border-radius: 6px;
     margin:10px;

@@ -1,7 +1,12 @@
-.Page {
+.Page{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 .body{
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,4 +20,9 @@
     min-height: 700px;
     padding: 20px 50px;
     min-width: 700px;
+}
+@media screen and (max-width: 500px){
+    .body{
+        min-width: 300px;
+    }
 }
