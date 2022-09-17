@@ -16,7 +16,7 @@ export const feedbacks = [{
     UserName: 'James Sombrano',
     text: 'The guy at the door is disgusting, refused to let my friends in even though i has a reservation and used curse language and called me a bitch! ' +
         'When i spoke to the manager he said “ i apologize for the inconvenience but if he doesn’t want to let the rest of your party in I can’t force him”',
-    status: 'В обработке',
+    status: 'Не решенный',
     date: now
 
 }, {
@@ -34,27 +34,27 @@ export const feedbacks = [{
     rate: 1,
     UserName: 'Sandra',
     text: 'not so good',
-    status: 'Не решено',
+    status: 'Негативный',
     date: now
 }, {
     id: Math.random(1000),
     rate: 5,
     UserName: 'Stacy',
     text: 'Excellent service',
-    status: 'Решенный',
+    status: 'Позитивный',
     date: now
 }, {
     id: Math.random(1000),
     rate: 5,
     UserName: 'Stacy',
     text: 'Excellent service',
-    status: 'Решенный',
+    status: 'Позитивный',
     date: now
 }, {
     id: Math.random(1000),
     rate: 5,
     UserName: 'Stacy',
     text: 'Excellent service',
-    status: 'Решенный',
+    status: 'Позитивный',
     date: now
 }]

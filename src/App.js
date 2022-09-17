@@ -17,6 +17,13 @@ import Settings from "./components/Settings/Settings";
 import ProFunctions from "./components/ProFunctions/ProFunctions";
 import Questions from "./components/Questions/Questions";
 import AboutUs from "./components/AboutUs/AboutUs";
+import QrConstructor from "./components/QrCode'sPages/QrConstructor";
+import QrInstruction from "./components/QrCode'sPages/QrInstruction";
+import QrTemplates from "./components/QrCode'sPages/QrTemplates";
+import PreparedQr from "./components/QrCode'sPages/PreparedQr";
+import CreateNewQr from "./components/QrCode'sPages/CreateNewQr";
+import Analytics from "./components/Analytics/Analytics";
+
 
 function App() {
     const [QrSrc , setQrSrc] = useState('http://localhost:3000')
@@ -68,6 +75,24 @@ function App() {
                 </Route>
                 <Route path="/Settings" element={
                     <Settings/>}>
+                </Route>
+                <Route path="QrConstructor" element={
+                    <QrConstructor/>}>
+                </Route>
+                <Route path="QrInstruction" element={
+                    <QrInstruction/>}>
+                </Route>
+                <Route path="QrTemplates" element={
+                    <QrTemplates/>}>
+                </Route>
+                <Route path="PreparedQr" element={
+                    <PreparedQr/>}>
+                </Route>
+                <Route path="CreateNewQr" element={
+                    <CreateNewQr text ={QrSrc}/>}>
+                </Route>
+                <Route path="Analytics" element={
+                    <Analytics/>}>
                 </Route>
                 <Route path="*" element={
                     <NoMatch/>}>

@@ -1,0 +1,23 @@
+.Page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.body {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    border-radius: 12px;
+    min-height: 600px;
+    min-width: 700px;
+    max-width: 80rem;
+}

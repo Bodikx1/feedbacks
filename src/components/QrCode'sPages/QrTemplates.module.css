@@ -1,0 +1,51 @@
+.Page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.body {
+    margin-top: 70px ;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    border-radius: 12px;
+    min-height: 600px;
+    min-width: 700px;
+    max-width: 80rem;
+}
+.templates{
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    width: 470px;
+    justify-content: space-between;
+    align-items: center;
+}
+.templates a{
+    width: 50%;
+    margin: 0;
+}
+.templates a:hover {text-decoration: none}
+.templates:hover{
+    background-color: lightgray;
+    border-radius: 6px;
+}
+@media screen and (max-width: 500px) {
+    .body{
+        min-width: 300px;
+        max-width: 400px;
+        height: 700px;
+    }
+    .templates{
+        width: 400px;
+    }
+}
